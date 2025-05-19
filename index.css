@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open-Sans', sans-serif;
+	overflow-x: none;
+}
+
+
+
+#main-btn {
+    width: 100%;
+    height: 10vh;
+    cursor: pointer;
+}
+
+.portfolio-works-container {
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+	padding: 20px;
+}
+
+.portfolio-work-div {
+	display: flex;
+	flex-direction: column;
+	background-color: #DEDEDE;
+	padding: 20px;
+	border-radius: 12px;
+    cursor: pointer;
+    animation-name: portfolio-work-anim;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    color: white;
+}
+
+.portfolio-work-div:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-image {
+	width: 20vw;
+	height: 25vh;
+}
+
+.portfolio-title {
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+.portfolio-description {
+	font-size: 14px;
+	margin-top: 12px;
+}
+
+.portfolio-application {
+	font-size: 20px;
+	margin-top: 12px;
+}
+
+.portfolio-pagination-container {
+    display: flex;
+    gap: 0.2rem;
+    justify-content: center;
+    padding: 24px;
+}
+
+.portfolio-pagination-button {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.portfolio-pagination-button-active {
+    background-color: blue;
+    color: white;
+    border: 1px solid white;
+}
+
+.about-me-container {
+    padding: 20px;  
+    background-color: #DEDEDE;
+}
+
+
+.footer {
+    position: absolute;
+    width: 100%;
+    background-color: gray;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+    padding: 45px;
+}
+
+#view-container {
+    background-color: black;
+    color: white;
+    width: 100vw;
+}
+
+#view-container img {
+    width: 30vw;
+}
+
+#view-container a {
+    background-color: seagreen;
+    color: white;
+}
+
+/* MONSTER CSS ANIMATIONS GOES HERE */
+@keyframes portfolio-work-anim {
+    0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+
